@@ -1,0 +1,9 @@
+---
+- name: Copy jar onto Tomcat server
+  hosts: 172.31.7.210
+  become: yes
+  tasks:
+  - name: copy jar onto Tomcat server
+    copy:
+      src: /home/linux-slave/workspace/FreestyleProj_New/allocations/target/java-hello-world.jar
+      dest: /opt/apache-tomcat-9.0.39/base
