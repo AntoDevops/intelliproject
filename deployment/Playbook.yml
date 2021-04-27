@@ -1,6 +1,6 @@
 ---
 - name: Copy jar onto Tomcat server
-  hosts: 172.31.7.210
+  hosts: [webservers]
   become: yes
   tasks:
   - name: copy jar onto Tomcat server
